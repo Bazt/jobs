@@ -9,16 +9,20 @@
 import Foundation
 import UIKit
 
-protocol PositionProtocol {
-    var title: String {get}
-    var city: String {get}
-    var companyLogo: UIImage? {get}
-}
-
-struct Position: PositionProtocol {
+class Position {
     var title: String
     var city: String
     var companyLogo: UIImage?
+    var logoPath: String?
+    var description: String
+    
+    init(title: String, city: String, logo: UIImage? = nil, path: String? = nil, description: String) {
+        self.title = title
+        self.city = city
+        self.companyLogo = logo
+        self.logoPath = path
+        self.description = description
+    }
 }
 
 

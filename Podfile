@@ -7,4 +7,6 @@ target 'jobs' do
 
   # Pods for jobs
   pod 'Alamofire', '~> 4.7'
+  pod 'Toast-Swift'
+  pod 'SwiftyJSON', '~> 4.0'
 end
